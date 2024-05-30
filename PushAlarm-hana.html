@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <title>카드 본인 확인 서비스</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="PushAlarm" class="main">
+        <div class="container-wrapper">
+          <div class="container">
+            <div class="header">
+              <header>
+                <button class="gnb mobile-type">
+                  <img src="./assets/image/svg/gnb-close.svg" alt="닫기" />
+                </button>
+
+                <h5>카드본인확인 서비스</h5>
+              </header>
+            </div>
+
+            <div class="body">
+              <div class="card-info">
+                <div class="card-item">
+                  <img src="./assets/image/finance/hana.svg" alt="" />
+                </div>
+
+                <div class="text-item">
+                  <p>하나카드</p>
+                  <p>
+                    앱으로 인증 요청<br />
+                    푸시알림을 보냈습니다.
+                  </p>
+                </div>
+              </div>
+
+              <p class="text-center">
+                앱에서 인증을 마친 후 아래<br />
+                ‘인증 완료’ 버튼을 눌러주세요.
+              </p>
+
+              <div class="step">
+                <div class="step-item">
+                  <p>STEP 1</p>
+
+                  <div class="icon">
+                    <img
+                      src="./assets/image/svg/step-1-hana.svg"
+                      alt="푸시알림 확인"
+                    />
+                  </div>
+
+                  <span>
+                    휴대폰에서 <br />
+                    푸시알림 확인
+                  </span>
+                </div>
+                <i>
+                  <img
+                    src="./assets/image/svg/arrow-right.svg"
+                    alt="화살표 오른쪽"
+                  />
+                </i>
+                <div class="step-item">
+                  <p>STEP 2</p>
+
+                  <div class="icon">
+                    <img
+                      src="./assets/image/svg/step-2-hana.svg"
+                      alt="앱 인증"
+                    />
+                  </div>
+
+                  <span>
+                    앱에서 인증 진행 <br />
+                    (패스워드, PIN, <br />
+                    생체인증 등)
+                  </span>
+                </div>
+                <i>
+                  <img
+                    src="./assets/image/svg/arrow-right.svg"
+                    alt="화살표 오른쪽"
+                  />
+                </i>
+                <div class="step-item">
+                  <p>STEP 3</p>
+
+                  <div class="icon">
+                    <img src="./assets/image/svg/step-3.svg" alt="인증완료" />
+                  </div>
+
+                  <span>
+                    앱에서 인증을 <br />
+                    마친 후 아래 <br />
+                    ‘인증 완료‘ 버튼 클릭
+                  </span>
+                </div>
+              </div>
+
+              <!-- 푸시알림이 오지 않을때 -->
+              <div id="Accordion">
+                <div class="accordion-header">
+                  <p>푸시알림이 오지 않았나요?</p>
+                  <button class="arrow size-24">
+                    <img
+                      src="./assets/image/svg/arrow-down.svg"
+                      alt="화살표 하"
+                    />
+                  </button>
+                </div>
+
+                <ul class="list-style">
+                  <li>휴대폰에 앱이 설치 되었는지 확인해주세요.</li>
+                  <li>앱에서 알림 내역을 확인해주세요.</li>
+                  <li>알림 수신동의 여부를 확인해주세요.</li>
+                  <li>
+                    문제가 계속된다면 롯데카드고객센터 1800-4273 로
+                    문의해주세요.
+                  </li>
+                </ul>
+              </div>
+
+              <div id="Counter">
+                <div class="title">
+                  <img src="./assets/image/svg/clock.svg" alt="타이머" />
+                  <p>유효시간</p>
+                </div>
+                <p class="color-error">04:59</p>
+              </div>
+            </div>
+
+            <div class="footer type-ars">
+              <button
+                class="btn-primary btn-lg"
+                onclick="handleOpenTerms('다음')"
+              >
+                인증완료
+              </button>
+            </div>
+
+            <footer>
+              <div class="raon-logo">
+                <img src="./assets/image/logo/logo_white.svg" alt="라온 로고" />
+              </div>
+              <p>개인정보처리방침</p>
+              <p>고객센터 1644-1187</p>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <title>카드 본인 확인 서비스</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="InputInformation" class="main">
+        <div class="container-wrapper">
+          <div class="container">
+            <div class="header">
+              <header>
+                <button class="gnb mobile-type">
+                  <img src="./assets/image/svg/gnb-close.svg" alt="닫기" />
+                </button>
+
+                <h5>카드본인확인 서비스</h5>
+              </header>
+            </div>
+
+            <div class="body">
+              <div class="card-info">
+                <div class="card-item">
+                  <img src="./assets/image/finance/loca.svg" alt="" />
+                </div>
+
+                <div class="text-item">
+                  <p>카드명</p>
+                  <p>
+                    디지로카 앱으로<br />
+                    QR코드를 스캔해주세요.
+                  </p>
+                </div>
+              </div>
+
+              <div class="bread-crumb">
+                <div class="text-item">
+                  <img src="./assets/image/svg/scan.svg" alt="스캔" />
+                  <p>앱 하단 <b>결제</b></p>
+                </div>
+                <div class="text-item">
+                  <img
+                    src="./assets/image/svg/arrow-right.svg"
+                    alt="화살표 오른쪽"
+                  />
+                </div>
+                <div class="text-item">
+                  <p><b>QR 스캔</b></p>
+                </div>
+              </div>
+
+              <div id="QR">
+                <div class="qr-item">
+                  <img src="./assets/image/QR-sample.png" alt="QR 코드" />
+                </div>
+
+                <p>또는 아래 코드 입력</p>
+
+                <h5>2706951</h5>
+              </div>
+
+              <div class="info-box center">
+                <p>앱에서 인증을 마친 후 아래 ‘인증 완료‘ 버튼 클릭</p>
+              </div>
+
+              <div id="Counter">
+                <div class="title">
+                  <img src="./assets/image/svg/clock.svg" alt="타이머" />
+                  <p>유효시간</p>
+                </div>
+                <p class="color-error">04:59</p>
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="button-group flex-col">
+                <button
+                  class="btn-primary btn-lg"
+                  onclick="handleOpenTerms('다음')"
+                >
+                  인증완료
+                </button>
+              </div>
+
+              <div class="link-group">
+                <a> 롯데카드 개인정보처리방침 </a>
+                <a> 홈페이지 인증 </a>
+              </div>
+            </div>
+
+            <footer>
+              <div class="raon-logo">
+                <img src="./assets/image/logo/logo_white.svg" alt="라온 로고" />
+              </div>
+              <p>개인정보처리방침</p>
+              <p>고객센터 1644-1187</p>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

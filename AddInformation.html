@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <title>카드 본인 확인 서비스</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="AddInformation" class="main">
+        <div class="container-wrapper">
+          <div class="container">
+            <div class="header">
+              <header>
+                <button class="gnb mobile-type">
+                  <img src="./assets/image/svg/gnb-close.svg" alt="닫기" />
+                </button>
+
+                <h5>카드본인확인 서비스</h5>
+              </header>
+            </div>
+
+            <div class="body">
+              <div class="card-info">
+                <div class="card-item">
+                  <img src="./assets/image/finance/loca.svg" alt="" />
+                </div>
+
+                <div class="text-item">
+                  <p>카드명</p>
+                  <p>
+                    정확한 본인확인을 위해<br />
+                    추가 정보를 입력해주세요.
+                  </p>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <!-- 이름 / 성별 입력 -->
+                <div class="input-item">
+                  <label for="">성명</label>
+
+                  <div class="flex flex-row">
+                    <input type="text" placeholder="실명 입력" />
+                    <div id="Radio">
+                      <div class="radio">
+                        <input type="radio" name="gender" id="men" checked />
+                        <label for="men">
+                          <div class="radio-btn">남</div>
+                        </label>
+                      </div>
+
+                      <div class="radio">
+                        <input type="radio" name="gender" id="women" />
+                        <label for="women">
+                          <div class="radio-btn">여</div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <span class="color-error">
+                    <i class="icon">
+                      <img
+                        src="./assets/image/svg/exclamation.svg"
+                        alt="에러 아이콘"
+                      />
+                    </i>
+                    성명을 입력해주세요.
+                  </span>
+                </div>
+                <!-- 카드 종류 입력 -->
+                <div class="input-item">
+                  <label for="">카드종류</label>
+                  <div id="CardRadio" class="grid col-3">
+                    <div class="radio">
+                      <input
+                        type="radio"
+                        name="card-select"
+                        id="default"
+                        checked
+                      />
+                      <label for="default">
+                        <div class="radio-btn">일반</div>
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <input type="radio" name="card-select" id="amex" />
+                      <label for="amex">
+                        <div class="radio-btn">AMEX</div>
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <input type="radio" name="card-select" id="dc" />
+                      <label for="dc">
+                        <div class="radio-btn">Diners Club</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- 카드 번호 입력 -->
+                <div class="input-item">
+                  <label for="">카드번호</label>
+                  <div class="grid gap-8">
+                    <input
+                      type="text"
+                      placeholder="4자리"
+                      aria-label="카드번호 4자리"
+                    />
+                    <input
+                      type="text"
+                      placeholder="4자리"
+                      aria-label="카드번호 4자리"
+                    />
+                    <input
+                      type="text"
+                      placeholder="4자리"
+                      aria-label="카드번호 4자리"
+                    />
+                    <input
+                      type="text"
+                      placeholder="4자리"
+                      aria-label="카드번호 4자리"
+                    />
+                  </div>
+                  <span class="color-error">
+                    <i class="icon">
+                      <img
+                        src="./assets/image/svg/exclamation.svg"
+                        alt="에러 아이콘"
+                      />
+                    </i>
+                    카드번호를 입력해주세요.
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer">
+              <button
+                class="btn-primary btn-lg"
+                onclick="handleOpenTerms('다음')"
+              >
+                ARS 연결하기
+
+                <img
+                  src="./assets/image/svg/button-next.svg"
+                  alt="ARS 연결하기"
+                />
+              </button>
+
+              <a> 롯데카드 개인정보처리방침 </a>
+            </div>
+
+            <footer>
+              <div class="raon-logo">
+                <img src="./assets/image/logo/logo_white.svg" alt="라온 로고" />
+              </div>
+              <p>개인정보처리방침</p>
+              <p>고객센터 1644-1187</p>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

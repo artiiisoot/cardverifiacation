@@ -1,0 +1,289 @@
+@import "./color.scss";
+@import "./font.scss";
+@import "./keyframe.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "SUIT", -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
+  font-size: 16px;
+  font-weight: 400;
+  color: $G80;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  &.desktop {
+    .mobile-type {
+      display: none !important;
+    }
+  }
+  &.mobile {
+    .desktop-type {
+      display: none !important;
+    }
+  }
+}
+
+p {
+  line-height: 1.2;
+}
+
+a {
+  color: $info;
+}
+
+b {
+  font-weight: 700;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  &.btn-lg {
+    padding: 1rem 0.75rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  &.btn-sm {
+    min-width: 10rem;
+    padding: 0.75rem;
+    border-radius: 0.625rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  &.btn-icon {
+    background: $white;
+    box-shadow: inset 0 0 0 1px $G30;
+    &:hover {
+      background: $G10;
+    }
+  }
+  &.btn-primary {
+    background: $primary;
+    color: $white;
+  }
+  &.btn-secondary {
+    background: $secondary;
+    color: $white;
+  }
+  &.btn-return {
+    background: transparent;
+    color: $G80;
+  }
+  &.arrow {
+    background: unset;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+
+    &:hover {
+      background: rgba($color: $G10, $alpha: 0.4);
+    }
+
+    &.size-24 {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    &.size-16 {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+  &.gnb {
+    background: unset;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+
+    &:hover {
+      background: rgba($color: $G10, $alpha: 0.4);
+    }
+  }
+
+  &:disabled,
+  &[disabled] {
+    button: disabled;
+    cursor: auto;
+    background: $G40;
+  }
+
+  &:hover {
+    transition: all 0.3s;
+  }
+
+  > img {
+    width: 1.25rem;
+    height: 1.25rem;
+    padding-bottom: 2px;
+  }
+}
+
+input {
+  height: 3rem;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  font-size: 0.875rem;
+  font-family: "SUIT";
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid $G30;
+  color: $G80;
+
+  &:focus {
+    color: $G80;
+    outline: 1px solid $black;
+    transition: all 1s;
+  }
+  &::placeholder {
+    color: $G50;
+  }
+  &:disabled,
+  &[disabled] {
+    button: disabled;
+    cursor: auto;
+    background: $G10;
+  }
+}
+
+label {
+  display: flex;
+  align-items: center;
+  column-count: auto;
+  gap: 0.5rem;
+  font-size: 1rem;
+
+  &.view-title {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  &.bold {
+    font-size: 1.5rem;
+  }
+}
+
+section {
+  display: none;
+}
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 1.125rem;
+  box-shadow: inset 0 -1px 0 $G30;
+
+  h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+    left: 1.125rem;
+    transform: translateY(-50%);
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  column-count: auto;
+  justify-content: space-between;
+  background: $secondary;
+  padding: 1rem 1.125rem;
+
+  .raon-logo {
+    height: 22px;
+  }
+
+  p {
+    cursor: pointer;
+    font-size: 0.75rem;
+    color: rgba($color: $white, $alpha: 0.6);
+    &:nth-of-type(1) {
+      text-decoration: underline;
+    }
+  }
+}
+
+.spacer {
+  flex: 1;
+}
+.flex {
+  display: flex;
+  column-count: auto;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.gap-8 {
+  gap: 0.5rem !important;
+}
+.w-10rem {
+  width: 10rem;
+}
+.w-21rem {
+  width: 21.25rem;
+}
+.bold {
+  font-weight: 700;
+}
+.show {
+  display: block !important;
+  opacity: 1 !important;
+}
+// 컬러 스타일
+.color-primary {
+  color: $primary;
+}
+.color-error {
+  color: $error;
+}
+// 텍스트 스타일
+.text-unerline {
+  text-decoration: underline;
+}

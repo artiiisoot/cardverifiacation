@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>카드 본인 확인 서비스</title>
+  </head>
+  <body onresize="parent.resizeTo(800,600)" onload="parent.resizeTo(800,600)">
+    <div id="Main" class="main">
+      <div class="container-wrapper">
+        <div class="container">
+          <div class="header">
+            <header>
+              <button class="gnb mobile-type">
+                <img src="./assets/image/svg/gnb-close.svg" alt="닫기" />
+              </button>
+
+              <h5>카드본인확인 서비스</h5>
+            </header>
+          </div>
+
+          <div class="body">
+            <h5 class="title">
+              본인확인에 사용할 신용카드<br />
+              또는체크카드를 선택해주세요.
+            </h5>
+
+            <div id="Filter">
+              <ul>
+                <li class="filter-button active">전체</li>
+                <li class="filter-button">카드사</li>
+                <li class="filter-button">디지털증명서</li>
+              </ul>
+            </div>
+
+            <!-- 카드사 그룹 -->
+            <div class="auth-group">
+              <label>카드사</label>
+
+              <div class="grid">
+                <div id="Finance" onclick="goToService()">
+                  <div class="finance-icon">
+                    <img
+                      src="./assets/image/finance/shinhan.svg"
+                      alt="신한카드"
+                    />
+                  </div>
+                  <p>신한카드</p>
+                </div>
+                <div id="Finance" onclick="goToService()">
+                  <div class="finance-icon">
+                    <img
+                      src="./assets/image/finance/samsung_card.svg"
+                      alt="삼성카드"
+                    />
+                  </div>
+                  <p>삼성카드</p>
+                </div>
+                <div id="Finance" onclick="goToService()">
+                  <div class="finance-icon">
+                    <img src="./assets/image/finance/kb.svg" alt="국민카드" />
+                  </div>
+                  <p>국민카드</p>
+                </div>
+                <div id="Finance" onclick="goToService()">
+                  <div class="finance-icon">
+                    <img src="./assets/image/finance/loca.svg" alt="롯데카드" />
+                  </div>
+                  <p>롯데카드</p>
+                </div>
+                <div id="Finance" onclick="goToService()">
+                  <div class="finance-icon">
+                    <img
+                      src="./assets/image/finance/hundae.svg"
+                      alt="현대카드"
+                    />
+                  </div>
+                  <p>현대카드</p>
+                </div>
+                <div id="Finance" onclick="goToService()">
+                  <div class="finance-icon">
+                    <img src="./assets/image/finance/nh.svg" alt="농협카드" />
+                  </div>
+                  <p>농협카드</p>
+                </div>
+                <div id="Finance" onclick="goToService('하나카드')">
+                  <div class="finance-icon">
+                    <img src="./assets/image/finance/hana.svg" alt="하나카드" />
+                  </div>
+                  <p>하나카드</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 디지털 증명서 그룹 -->
+            <div class="auth-group">
+              <label>디지털 증명서</label>
+              <div class="grid">
+                <div id="Finance">
+                  <div class="finance-icon">
+                    <img
+                      src="./assets/image/finance/samsung_pay.svg"
+                      alt="삼성페이"
+                    />
+                  </div>
+                  <p>삼성페이</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cookie-information">
+              <!-- 쿠키 차단 해제 방법 안내 -->
+              <div id="Accordion">
+                <div class="accordion-header">
+                  <p>쿠키 차단 해제 방법 안내</p>
+                  <button class="arrow size-24">
+                    <img
+                      src="./assets/image/svg/arrow-down.svg"
+                      alt="화살표 하"
+                    />
+                  </button>
+                </div>
+
+                <ul>
+                  <li>
+                    <p>
+                      <b>[안드로이드]</b>
+                    </p>
+                    <p>
+                      인터넷
+                      <i class="icon">
+                        <img
+                          src="./assets/image/svg/arrow-right.svg"
+                          alt="화살표 우"
+                        />
+                      </i>
+                      메뉴
+                      <i class="icon">
+                        <img
+                          src="./assets/image/svg/arrow-right.svg"
+                          alt="화살표 우"
+                        />
+                      </i>
+                      개인정보 보호 및 보안
+                      <i class="icon">
+                        <img
+                          src="./assets/image/svg/arrow-right.svg"
+                          alt="화살표 우"
+                        />
+                      </i>
+                      쿠키 허용
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <b>[iOS]</b>
+                    </p>
+                    <p>
+                      설정
+                      <i class="icon">
+                        <img
+                          src="./assets/image/svg/arrow-right.svg"
+                          alt="화살표 우"
+                        />
+                      </i>
+                      Safari
+                      <i class="icon">
+                        <img
+                          src="./assets/image/svg/arrow-right.svg"
+                          alt="화살표 우"
+                        />
+                      </i>
+                      모든 쿠키 차단 해제
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <footer>
+            <div class="raon-logo">
+              <img src="./assets/image/logo/logo_white.svg" alt="라온 로고" />
+            </div>
+            <p>개인정보처리방침</p>
+            <p>고객센터 1644-1187</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

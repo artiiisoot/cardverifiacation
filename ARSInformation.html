@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <title>카드 본인 확인 서비스</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="ARSInformation" class="main">
+        <div class="container-wrapper">
+          <div class="container">
+            <div class="header">
+              <header>
+                <button class="gnb mobile-type">
+                  <img src="./assets/image/svg/gnb-close.svg" alt="닫기" />
+                </button>
+
+                <h5>카드본인확인 서비스</h5>
+              </header>
+            </div>
+
+            <div class="body">
+              <div class="card-info">
+                <div class="card-item">
+                  <img src="./assets/image/finance/loca.svg" alt="" />
+                </div>
+
+                <div class="text-item">
+                  <p>카드명</p>
+                  <p>
+                    1644-7900 번호로 온 안내에<br />
+                    따라 ARS 인증을 해주세요.
+                  </p>
+                </div>
+              </div>
+
+              <div class="step">
+                <div class="step-item">
+                  <p>STEP 1</p>
+
+                  <div class="icon">
+                    <img src="./assets/image/svg/step-1.svg" alt="ARS 수신" />
+                  </div>
+
+                  <span>
+                    1644-7900 <br />
+                    ARS 수신
+                  </span>
+                </div>
+                <i>
+                  <img
+                    src="./assets/image/svg/arrow-right.svg"
+                    alt="화살표 오른쪽"
+                  />
+                </i>
+                <div class="step-item">
+                  <p>STEP 2</p>
+
+                  <div class="icon">
+                    <img
+                      src="./assets/image/svg/step-2.svg"
+                      alt="카드 비밀번호 입력"
+                    />
+                  </div>
+
+                  <span>
+                    카드 비밀번호 <br />
+                    앞 2자리 입력
+                  </span>
+                </div>
+                <i>
+                  <img
+                    src="./assets/image/svg/arrow-right.svg"
+                    alt="화살표 오른쪽"
+                  />
+                </i>
+                <div class="step-item">
+                  <p>STEP 3</p>
+
+                  <div class="icon">
+                    <img src="./assets/image/svg/step-3.svg" alt="인증완료" />
+                  </div>
+
+                  <span>
+                    ARS 인증을 마친 후<br />
+                    아래 ‘인증 완료‘<br />
+                    버튼 클릭
+                  </span>
+                </div>
+              </div>
+
+              <div class="info-box">
+                <ul>
+                  <li>법인카드, 가족카드, 선불카드는 본인확인이 불가합니다.</li>
+                  <li>
+                    휴대폰에 착신전환, 수신거부, 로밍 등의 설정이 되어 있는 경우
+                    서비스 이용이 불가할 수 있습니다.
+                  </li>
+                  <li>
+                    카드사에 등록된 고객님의 휴대폰 번호가 변경되었거나 잘못
+                    등록된 경우 변경 후 이용하시기 바랍니다.
+                  </li>
+                  <li>
+                    <a href=""> 번호 변경 방법 안내 </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div id="Counter">
+                <div class="title">
+                  <img src="./assets/image/svg/clock.svg" alt="타이머" />
+                  <p>유효시간</p>
+                </div>
+                <p class="color-error">04:59</p>
+              </div>
+            </div>
+
+            <div class="footer">
+              <button
+                class="btn-primary btn-lg"
+                onclick="handleOpenTerms('다음')"
+              >
+                인증완료
+              </button>
+
+              <a> 롯데카드 개인정보처리방침 </a>
+            </div>
+
+            <footer>
+              <div class="raon-logo">
+                <img src="./assets/image/logo/logo_white.svg" alt="라온 로고" />
+              </div>
+              <p>개인정보처리방침</p>
+              <p>고객센터 1644-1187</p>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

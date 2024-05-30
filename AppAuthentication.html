@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <title>카드 본인 확인 서비스</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="AppAuthentication" class="main">
+        <div class="container-wrapper">
+          <div class="container">
+            <div class="header">
+              <header>
+                <button class="gnb mobile-type">
+                  <img src="./assets/image/svg/gnb-close.svg" alt="닫기" />
+                </button>
+
+                <h5>카드본인확인 서비스</h5>
+              </header>
+            </div>
+
+            <div class="body">
+              <div class="card-info">
+                <div class="card-item">
+                  <img src="./assets/image/finance/loca.svg" alt="" />
+                </div>
+
+                <div class="text-item">
+                  <p>카드명</p>
+                  <p>
+                    디지로카 앱에서<br />
+                    인증을 완료해주세요.
+                  </p>
+                </div>
+              </div>
+
+              <div class="info-box center">
+                <p>앱에서 인증을 마친 후 아래 ‘인증 완료‘ 버튼 클릭</p>
+              </div>
+
+              <div id="Accordion">
+                <div class="accordion-header">
+                  <p>앱이 실행되지 않나요?</p>
+                  <button class="arrow size-24">
+                    <img
+                      src="./assets/image/svg/arrow-down.svg"
+                      alt="화살표 하"
+                    />
+                  </button>
+                </div>
+
+                <ul>
+                  <li>
+                    디지로카 앱을 직접 실행한 후 본인확인 요청 건을 확인하여
+                    인증을 완료해주세요. <br />
+                    <a href="">앱 실행하기</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div id="Counter">
+                <div class="title">
+                  <img src="./assets/image/svg/clock.svg" alt="타이머" />
+                  <p>유효시간</p>
+                </div>
+                <p class="color-error">04:59</p>
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="button-group flex-col">
+                <button
+                  class="btn-primary btn-lg"
+                  onclick="handleOpenTerms('다음')"
+                >
+                  인증완료
+
+                  <img
+                    src="./assets/image/svg/button-next.svg"
+                    alt="인증완료"
+                  />
+                </button>
+              </div>
+
+              <div class="link-group">
+                <a> 하나카드 개인정보처리방침 </a>
+                <a> 홈페이지 인증 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
